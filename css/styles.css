@@ -1,0 +1,458 @@
+/****************************SELECTOR***********************************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  /* font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif; */
+}
+
+
+/****************************CLASS SELECTOR***********************************/
+
+/*****************************HEADER CLASS SELECTOR*****************************/
+header {
+  padding: 50px;
+}
+
+header .top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-header .top-header-right a {
+  margin: 0 20px;
+  text-decoration: none;
+}
+
+header .template-top {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.template-top .top-content {
+  flex: 0.8;
+  align-self: center;
+  text-align: 2;
+
+}
+
+.top-content p {
+  line-height: 1.2;
+  margin-top: 10px;
+}
+
+.top-content input {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 75px 10px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.top-content .btn-top-content {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  border-color: hsl(224, 93%, 58%);
+  border-radius: 4px;
+  padding: 10px 50px;
+  background-color: hsl(224, 93%, 58%);
+}
+
+.top-content .btn-top-content:hover {
+  opacity: 0.8;
+}
+
+/* .input-container[data-error] input {
+  border-color: red;
+  color: red;
+  background-color: #fffafa;
+
+}
+
+.input-container[data-error]::after {
+  content: attr(data-error);
+  display: block;
+  font-size: 0.85rem;
+  color: red;
+  margin: 10px 0;
+} */
+
+
+/*****************************MAIN CLASS SELECTOR*****************************/
+
+main {
+  background-image: url("images/bg-curve-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+main .template-middle {
+  margin-top: 100px;
+  padding: 50px;
+  display: flex;
+}
+
+.template-middle .middle-content {}
+
+
+.middle-content .content {
+  width: 56%;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+/* .middle-content .linked-fylo-works {
+  display: flex;
+} */
+
+.middle-content .fylo-works {
+  text-decoration: none;
+  margin-top: 20px;
+  color: hsl(170, 45%, 43%);
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 2px solid hsl(170, 45%, 43%);
+}
+
+.fylo-works .arrow {
+  width: 20px;
+  height: 20px;
+}
+
+.middle-content .template-card-middle {
+  width: 45%;
+  margin-top: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 3px 3px 3px hsl(245, 75%, 52%, 0.25);
+}
+
+.template-card-middle .card-content {
+  line-height: 1.5;
+  padding: 30px;
+}
+
+/* .card-content p {
+  width: 60%;
+} */
+
+.card-content .profile {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+main .template-bottom-middle {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(238, 22%, 44%);
+  color: hsl(240, 75%, 98%);
+  padding: 100px 50px;
+}
+
+.template-bottom-middle .bottom-middle-content-left {
+  width: 35%;
+  line-height: 1.5;
+
+}
+
+.bottom-middle-content-left p {
+  margin-top: 15px;
+  color: hsl(240, 75%, 98%);
+}
+
+
+.template-bottom-middle .bottom-middle-content-right {
+  width: 40%;
+
+}
+
+.bottom-middle-content-right .input-middle {
+  width: 50%;
+  display: block;
+  padding: 10px 100px 10px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+
+}
+
+.bottom-middle-content-right .btn-top-content-bottom {
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  border-color: hsl(224, 93%, 58%);
+  border-radius: 4px;
+  padding: 10px 50px;
+  background-color: hsl(224, 93%, 58%);
+  margin-top: 20px;
+  width: 50%;
+}
+
+/* .button-bottom {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 39.5%;
+
+} */
+
+.bottom-middle-content-right .btn-top-content-bottom:hover {
+  opacity: 0.8;
+}
+
+/*****************************FOOTER CLASS SELECTOR*****************************/
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+}
+
+footer .template-footer {
+  padding: 50px;
+}
+
+.template-footer .template-contact {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  align-items: center;
+}
+
+.template-phone .logo-phone {
+  margin: 0 15px 0 0;
+}
+
+.template-email .logo-email {
+  margin: 0 15px 0 0;
+}
+
+.template-contact span {
+  color: white;
+}
+
+.template-contact .logo-bottom {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.template-contact .template-phone {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.template-contact .template-email {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.template-contact .about-us {
+  grid-column: 2;
+  grid-row: 2;
+
+}
+
+.template-contact .jobs {
+  grid-column: 2;
+  grid-row: 3;
+
+}
+
+.template-contact .press {
+  grid-column: 2;
+  grid-row: 4;
+
+}
+
+.template-contact .blog {
+  grid-column: 2;
+  grid-row: 5;
+
+}
+
+.template-contact .contact-us {
+  grid-column: 3;
+  grid-row: 2;
+
+}
+
+.template-contact .terms {
+  grid-column: 3;
+  grid-row: 3;
+
+}
+
+.template-contact .privacy {
+  grid-column: 3;
+  grid-row: 4;
+
+}
+
+.template-contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.template-contact a:hover {
+  color: hsl(224, 93%, 58%);
+  font-size: 1.25rem;
+  transition: 2s;
+}
+
+.template-contact .template-social-media {
+  grid-column: 4;
+  grid-row: 2;
+
+}
+
+.template-social-media img:hover {
+  border: 1px solid hsl(224, 93%, 58%);
+  border-radius: 50px;
+}
+
+/****************************Media Quaries***********************************/
+
+@media screen and (max-width:620px) {
+
+  /*****************************HEADER CLASS SELECTOR*****************************/
+  header .template-top {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .top-content .btn-top-content {
+    padding: 10px 90px;
+  }
+
+  /*****************************MAIN CLASS SELECTOR*****************************/
+
+  main {
+    background-image: url("images/bg-curve-mobile.svg");
+    background-size: cover;
+  }
+
+  main .template-middle {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .middle-content .content {
+    width: 100%;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+
+  .middle-content .fylo-works-container {
+    text-align: center;
+  }
+
+  .middle-content .template-card-middle {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  main .template-bottom-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .template-bottom-middle .bottom-middle-content-left {
+    width: 65%;
+
+  }
+
+  .template-bottom-middle .bottom-middle-content-right {
+    margin-top: 20px;
+    width: 65%;
+  }
+
+  .bottom-middle-content-right input {
+    padding: 10px 140px 10px 10px;
+  }
+
+  .bottom-middle-content-right .btn-top-content-bottom {
+    padding: 10px 95px;
+  }
+
+
+  /*****************************FOOTER CLASS SELECTOR*****************************/
+  .template-footer .template-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .template-contact span {
+    margin-top: 20px;
+  }
+
+  .template-contact .template-phone {
+    margin-top: 20px;
+
+  }
+
+  .template-contact .template-email {
+    margin-top: 20px;
+  }
+
+  .template-contact .about-us {
+    margin-top: 50px
+  }
+
+  .template-contact .contact-us {
+    margin-top: 50px
+  }
+
+  .template-contact .template-social-media {
+    margin: 50px auto 0;
+    align-items: center;
+  }
+}
+
+
+
+
+/****************************IMG CLASS SELECTOR***********************************/
+
+.template-top img {
+  width: 50%;
+  height: auto;
+}
+
+.template-middle img {
+  width: 50%;
+  height: auto;
+}
+
+.card-content img {
+  width: 20px;
+  height: 20px;
+}
+
+.profile img {
+  border-radius: 50px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.template-social-media img {
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid white;
+  border-radius: 50px;
+}
