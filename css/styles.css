@@ -6,8 +6,7 @@
 
 body {
   display: grid;
-  /* font-family: 'Raleway', sans-serif;
-  font-family: 'Open Sans', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -22,6 +21,7 @@ header .top-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
 }
 
 .top-header .top-header-right a {
@@ -101,18 +101,11 @@ main .template-middle {
   display: flex;
 }
 
-.template-middle .middle-content {}
-
-
 .middle-content .content {
   width: 56%;
   line-height: 1.5;
   margin-top: 20px;
 }
-
-/* .middle-content .linked-fylo-works {
-  display: flex;
-} */
 
 .middle-content .fylo-works {
   text-decoration: none;
@@ -121,6 +114,10 @@ main .template-middle {
   display: inline-block;
   padding-bottom: 5px;
   border-bottom: 2px solid hsl(170, 45%, 43%);
+}
+
+.middle-content .fylo-works:hover {
+  opacity: 0.8;
 }
 
 .fylo-works .arrow {
@@ -152,6 +149,17 @@ main .template-middle {
   margin-top: 20px;
 }
 
+.profile .CEO-name {
+  font-size: 0.9375rem;
+  font-weight: bold;
+
+}
+
+.profile .profesion {
+  font-size: 0.75rem;
+}
+
+
 main .template-bottom-middle {
   margin-top: 100px;
   display: flex;
@@ -179,9 +187,8 @@ main .template-bottom-middle {
 }
 
 .bottom-middle-content-right .input-middle {
-  width: 50%;
-  display: block;
-  padding: 10px 100px 10px 10px;
+  display: inline-block;
+  padding: 10px 200px 10px 10px;
   border: 1px solid black;
   border-radius: 4px;
 
@@ -197,7 +204,6 @@ main .template-bottom-middle {
   padding: 10px 50px;
   background-color: hsl(224, 93%, 58%);
   margin-top: 20px;
-  width: 50%;
 }
 
 /* .button-bottom {
@@ -322,10 +328,34 @@ footer .template-footer {
 }
 
 /****************************Media Quaries***********************************/
+@media screen and (max-width:1000px) {
+  .middle-content .template-card-middle {
+    width: 80%;
+  }
+
+  .template-contact .template-phone {
+    margin-top: 20px;
+
+  }
+
+}
 
 @media screen and (max-width:620px) {
 
   /*****************************HEADER CLASS SELECTOR*****************************/
+  header {
+    padding: 20px;
+  }
+
+  .top-header .top-header-right a {
+    margin: 0 5px;
+  }
+
+  .top-content h1 {
+    margin: 50px auto;
+  }
+
+
   header .template-top {
     display: flex;
     flex-direction: column-reverse;
@@ -339,6 +369,7 @@ footer .template-footer {
   /*****************************MAIN CLASS SELECTOR*****************************/
 
   main {
+    margin-top: 80px;
     background-image: url("images/bg-curve-mobile.svg");
     background-size: cover;
   }
@@ -346,6 +377,13 @@ footer .template-footer {
   main .template-middle {
     display: flex;
     flex-direction: column-reverse;
+    padding: 20px;
+  }
+
+  .middle-content h1 {
+    text-align: center;
+    margin: 50px auto;
+    font-size: 1.125rem;
   }
 
   .middle-content .content {
@@ -368,6 +406,7 @@ footer .template-footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 20px;
   }
 
   .template-bottom-middle .bottom-middle-content-left {
@@ -375,21 +414,32 @@ footer .template-footer {
 
   }
 
+  .bottom-middle-content-left h1 {
+    font-size: 1.125rem;
+  }
+
   .template-bottom-middle .bottom-middle-content-right {
     margin-top: 20px;
     width: 65%;
   }
 
-  .bottom-middle-content-right input {
-    padding: 10px 140px 10px 10px;
+  .bottom-middle-content-right .input-middle {
+    padding: 10px 50px 10px 10px;
+
   }
 
+
   .bottom-middle-content-right .btn-top-content-bottom {
-    padding: 10px 95px;
+    padding: 10px 50px;
   }
 
 
   /*****************************FOOTER CLASS SELECTOR*****************************/
+
+  footer .template-footer {
+    padding: 20px;
+  }
+
   .template-footer .template-contact {
     display: flex;
     flex-direction: column;
@@ -421,6 +471,7 @@ footer .template-footer {
     margin: 50px auto 0;
     align-items: center;
   }
+
 }
 
 
@@ -428,14 +479,16 @@ footer .template-footer {
 
 /****************************IMG CLASS SELECTOR***********************************/
 
-.template-top img {
+.template-top .illustration-1 {
   width: 50%;
   height: auto;
+  margin: auto;
 }
 
-.template-middle img {
+.template-middle .illustration-2 {
   width: 50%;
   height: auto;
+  margin: auto;
 }
 
 .card-content img {
